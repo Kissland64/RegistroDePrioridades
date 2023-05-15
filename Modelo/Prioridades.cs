@@ -7,9 +7,9 @@ namespace Registrodeprioridades.Modelo
         [Key]
         public int PrioridadesId { get; set; }
 
-        [Required(ErrorMessage = "La descripcion es un campo necesario")]
+        [Required(ErrorMessage = "Obligatoriamente tiene que tener una descripcion")]
         public string Descripcion { get; set; }
-        [Required(ErrorMessage = "Los DiasCompromiso son necesarios")]
+        [Required(ErrorMessage = "Obligatoriamente tiene que tener los Dias compromiso")]
 
         public int DiasCompromiso { get; set; }
     }
