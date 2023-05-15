@@ -1,13 +1,12 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Migrations;
-using Registrodeprioridades.Modelo;
+using Registro_de_prioridades.DAL;
+using Registro_de_prioridades.Modelo;
 using System.Data.Common;
 
-namespace Registrodeprioridades.DAL
+namespace Registro_de_prioridades.DAL
 {
     public class PrioridadesContext : DbContext
     {
-        public PrioridadesContext(DbContextOptions<PrioridadesContext> Options)
+        public PrioridadesContext(DbContextOptions<PrioridadesContext> Options) 
             : base(Options) { }
 
         public DbSet<Prioridades> Prioridades { get; set; }
